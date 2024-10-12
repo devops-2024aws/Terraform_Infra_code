@@ -19,6 +19,8 @@ resource "aws_instance" "Ec2_instance" {
      ami = var.Ami
      instance_type = var.instance_type
      key_name = var.keypair
+     //Calling the userData File
+      user_data= file("UserData-test.sh")
      tags = {
        Name= "terraform-Ec2"
      }
