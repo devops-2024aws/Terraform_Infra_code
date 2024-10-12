@@ -4,7 +4,7 @@ output "publicIp" {
     value = aws_instance.importEc2.public_ip
     //By default sentivie is flase when we given sensitive=true 
     //it will not display the ip address on the terminal
-    // to view the output on terminal
+    // to view the output on terminal run this command terraform output <Localname>
     sensitive = true
   
 }
